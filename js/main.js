@@ -1,11 +1,10 @@
 /*autoplay modal*/
-
-document.getElementById("autoplay-btn").onclick = function() {enableAutoplay()};
+document.getElementById("button-autoplay").onclick = function() {enableAutoplay()};
+var vid= document.getElementById("video-modal");
 function enableAutoplay() {
-  $("#video-modal").autoplay = true;
-  $("#video-modal").load();
+  vid.autoplay = true;
+  vid.load();
 }
-
 
 /*play pause modal*/
 var modalvideo = document.getElementById("video-modal");
