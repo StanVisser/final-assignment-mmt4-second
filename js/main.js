@@ -1,8 +1,9 @@
 /*autoplay modal*/
-var vid = document.getElementById("video-modal");
-function enableAutoplay() { 
-  vid.autoplay = true;
-  vid.load();
+
+document.getElementById("autoplay-btn").onclick = function() {enableAutoplay()};
+function enableAutoplay() {
+  $("#video-modal").autoplay = true;
+  $("#video-modal").load();
 }
 
 
@@ -190,7 +191,7 @@ $('.video-player').hover(function(){
 })
 });
 
-/*change z-index videos*/
+/*change z-index videos
 function myFunction_one() {
   document.getElementById("first-player").style.zIndex = "3";
   document.getElementById("second-player").style.zIndex = "2";
@@ -206,7 +207,28 @@ function myFunction_three() {
   document.getElementById("second-player").style.zIndex = "2";
   document.getElementById("first-player").style.zIndex = "1";
 }
+*/
 
+document.getElementById("first-player").onclick = function() {myFunction()};
+function myFunction() {
+  document.getElementById("first-player").style.zIndex = "3";
+  document.getElementById("second-player").style.zIndex = "2";
+  document.getElementById("third-player").style.zIndex = "1";
+}
+
+document.getElementById("second-player").onclick = function() {myFunction_two()};
+function myFunction_two() {
+  document.getElementById("first-player").style.zIndex = "1";
+  document.getElementById("second-player").style.zIndex = "3";
+  document.getElementById("third-player").style.zIndex = "1";
+}
+
+document.getElementById("third-player").onclick = function() {myFunction_three()};
+function myFunction_three() {
+  document.getElementById("third-player").style.zIndex = "3";
+  document.getElementById("second-player").style.zIndex = "2";
+  document.getElementById("first-player").style.zIndex = "1";
+}
 
 //accordion// 
 $(function() {

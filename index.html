@@ -5,7 +5,6 @@
 <title>Netflix</title>
 <link href="css/style.css" rel="stylesheet">
 <link href="css/fonts.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <link rel="shortcut icon" href="img/Netflix.svg" type="image/x-icon" />
@@ -36,19 +35,18 @@
     </div>
     <div class="trailerImage">
       <div class="blackOverlay"></div>
-      <img onclick="enableAutoplay()" src="img/Play.svg" class="playBtn" data-toggle="modal" data-target="#play-trailer">
+      <img id="autoplay-btn"src="img/Play.svg" class="playBtn" data-toggle="modal" data-target="#play-trailer">
     </div>
 
     <div class="modal fade" id="play-trailer">
       <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-body" id="modal-player">
-            <video width="100%" autoplay id="video-modal">
+            <video width="100%" id="video-modal">
               <source src="./videos/Dark.mp4" type="video/mp4">
             </video>
             <div class="modal-controls">
-              <button class="play-pause" >
-                
+              <button class="play-pause">
                 <img class="play" src="img/Play.svg">
                 <img class="pause" src="img/pause.svg">
               </button>
@@ -82,7 +80,7 @@
             <source src="videos/Dark.mp4" type=video/mp4>
           </video>
           <div class="controls">
-            <button onclick="myFunction_one()" class="play-pause" >
+            <button class="play-pause" >
               <img class="play" src="img/Play.svg">
               <img class="pause" src="img/pause.svg">
             </button>
@@ -95,7 +93,7 @@
             <source src="videos/Ozark.mp4" type=video/mp4> 
           </video>
           <div class="controls">
-            <button onclick="myFunction_two()" class="play-pause" >
+            <button class="play-pause" >
               <img class="play" src="img/Play.svg">
               <img class="pause" src="img/pause.svg">
             </button>
@@ -108,7 +106,7 @@
             <source src="videos/Irishman.mp4" type=video/mp4>
           </video>
           <div class="controls">
-            <button onclick="myFunction_three()" class="play-pause" >
+            <button class="play-pause" >
               <img class="play" src="img/Play.svg">
               <img class="pause" src="img/pause.svg">
             </button>
@@ -227,8 +225,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 
