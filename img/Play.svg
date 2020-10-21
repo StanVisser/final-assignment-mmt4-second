@@ -1,0 +1,16 @@
+<svg id="Play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="88" height="88" viewBox="0 0 88 88">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="47.153" height="47.153" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Ellipse_1" data-name="Ellipse 1" fill="rgba(0,0,0,0.3)" stroke="#fff" stroke-width="5">
+    <circle cx="44" cy="44" r="44" stroke="none"/>
+    <circle cx="44" cy="44" r="41.5" fill="none"/>
+  </g>
+  <g id="play-2" data-name="play" transform="translate(15.847 20)" clip-path="url(#clip-path)">
+    <g transform="translate(-806.147 -1028.581)">
+      <path id="Path_13" data-name="Path 13" d="M0,4.454,33.342,0,28.888,33.342Z" transform="translate(829.724 1028.581) rotate(45)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html data-theme="light">
+<head>
+<meta charset="UTF-8">
+<title>Netflix</title>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/fonts.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="shortcut icon" href="img/Netflix.svg" type="image/x-icon" />
+</head>
+
+<body>
+<!--header-->
+<header>
+  <div class="nav-middle">
+    <nav class="navBar">
+        <img class="logoNav" src="img/netflix logo.svg">  
+        <ul>
+            <li><a href="#">Over</a></li>
+            <li><a href="#">Prijzen</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" id="login"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+        </ul>
+    </nav>
+  </div>
+  
+    <div class="centerText">
+      <h1>A Netflix original</h1>
+      <h2>Something strange is happening in Hawkins</h2>
+      <p>Netflix is in Nederland sinds 11 september 2013. Binnen een mum van tijd is de streaming dienst voor films en series on demand een doorslaand succes, waarbij het goedkoopste abonnement momenteel 7,99 euro per maand bedraagt.</p>
+      <a href="#">
+        <button class="button" id="firstButton">PROBEER GRATIS</button>
+      </a>
+    </div>
+    <div class="trailerImage">
+      <div class="blackOverlay"></div>
+      <img onclick="enableAutoplay()" src="img/Play.svg" class="playBtn" data-toggle="modal" data-target="#play-trailer">
+    </div>
+
+    <div class="modal fade" id="play-trailer">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body" id="modal-player">
+            <video width="100%" autoplay id="video-modal">
+              <source src="./videos/Dark.mp4" type="video/mp4">
+            </video>
+            <div class="modal-controls">
+              <button class="play-pause" >
+                
+                <img class="play" src="img/Play.svg">
+                <img class="pause" src="img/pause.svg">
+              </button>
+              <button class="forward-button"><img src="img/forward btn.svg"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</header>
+
+
+
+
+<!--main-->
+<section class="midSection">
+  <div class="contentMid">
+    <div class="firstTextbox">
+      <h1>Stop met dingen doen, begin met kijken</h1>
+      <h2>
+        200+ VAN DE BESTE SHOWS,
+        <br>
+        DIE WACHTEN OM BEKEKEN TE WORDEN</h2>
+    </div>
+    <div class="video-part">
+        <div id= "video-wrap">
+         
+          <div class="video-player" id="first-player">
+          <video id="video_one" class="first-video" width="536" height="301" poster="img/dark.jpg">
+            <source src="videos/Dark.mp4" type=video/mp4>
+          </video>
+          <div class="controls">
+            <button onclick="myFunction_one()" class="play-pause" >
+              <img class="play" src="img/Play.svg">
+              <img class="pause" src="img/pause.svg">
+            </button>
+            <button class="forward-first"><img src="img/forward btn.svg"></button>
+          </div>
+          </div>
+
+          <div class="video-player" id="second-player">
+          <video id="video_two" class="second-video" width="536" height="301" poster="img/ozark.jpg">
+            <source src="videos/Ozark.mp4" type=video/mp4> 
+          </video>
+          <div class="controls">
+            <button onclick="myFunction_two()" class="play-pause" >
+              <img class="play" src="img/Play.svg">
+              <img class="pause" src="img/pause.svg">
+            </button>
+            <button class="forward-second"><img src="img/forward btn.svg"></button>
+          </div>
+          </div>
+
+          <div class="video-player" id="third-player">
+          <video id="video_three" class="third-video" width="536" height="301" poster="img/irishman.jpg">
+            <source src="videos/Irishman.mp4" type=video/mp4>
+          </video>
+          <div class="controls">
+            <button onclick="myFunction_three()" class="play-pause" >
+              <img class="play" src="img/Play.svg">
+              <img class="pause" src="img/pause.svg">
+            </button>
+            <button class="forward-third"><img src="img/forward btn.svg"></button>
+          </div>
+          </div>
+    
+      </div>
+    
+     
+     
+    
+    
+    </div>
+
+    </div>
+
+    <div class="secondTextbox">
+    <p>Netflix is in Nederland sinds 11 september 2013.<br>Binnen een mum van tijd is de streaming dienst voor films <br>en serieson demand een doorslaand succes, waarbij het goedkoopste <br>abonnement momenteel 7,99 euro per maand bedraagt.</p>
+    <a href="#">
+      <button class="button" id="secondButton">PROBEER GRATIS</button>
+    </a>
+    </div>
+
+
+
+</section>
+
+<footer class="footer">
+  <h1>Kies het abonnement dat bij u past</h1>
+  <div class="accordion-plans">
+    <ul class="plans">
+      <li rel="firstPlan" class="active">Basic</li>
+      <li rel="secondPlan">Standaard</li>
+      <li rel="thirdPlan">Premium</li>
+    </ul>
+
+    <div id="firstPlan" class="plan active">
+      <div class="content-white">
+      <p>Prijs per maand<br>
+        Video qualiteit<br>
+        Resolutie<br>
+        Schermen<br>
+        Oneindig films and TV<br>
+        Cancel op elk moment
+      </p>
+      </div>
+      <div class="content-red">
+        <p>€6,99<br>
+          Gemiddeld<br>
+          HD<br>
+          1<br>  
+          Yes<br>
+          No        
+        </p>
+        </div>
+        <a href="#">
+          <button class="button" id="thirdButton">KIES ABONNEMENT</button>
+        </a>
+      <h6>Downgrade or update at any time</h6>
+    </div>
+
+    <div id="secondPlan" class="plan active">
+      <div class="content-white">
+      <p>Prijs per maand<br>
+        Video qualiteit<br>
+        Resolutie<br>
+        Schermen<br>
+        Oneindig films and TV<br>
+        Cancel op elk moment
+      </p>
+      </div>
+      <div class="content-red">
+        <p>€9,99<br>
+          Hoog<br>
+          Quad HD<br>
+          2<br>  
+          Ja<br>
+          Nee        
+        </p>
+        </div>
+        <a href="#">
+          <button class="button" id="thirdButton">KIES ABONNEMENT</button>
+        </a>
+      <h6>Downgrade or update at any time</h6>
+    </div>
+
+    <div id="thirdPlan" class="plan active">
+      <div class="content-white">
+      <p>Prijs per maand<br>
+        Video qualiteit<br>
+        Resolutie<br>
+        Schermen<br>
+        Oneindig films and TV<br>
+        Cancel op elk moment
+      </p>
+      </div>
+      <div class="content-red">
+        <p>€13,99<br>
+          Beste<br>
+          4K+HDR<br>
+          4<br>  
+          Ja<br>
+          Ja       
+        </p>
+        </div>
+        <a href="#">
+          <button class="button" id="thirdButton">KIES ABONNEMENT</button>
+        </a>
+      <h6>Downgrade or update at any time</h6>
+    </div>
+
+  </div>
+
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+
+</script>
+</body>
+</html>

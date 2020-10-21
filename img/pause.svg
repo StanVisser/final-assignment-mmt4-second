@@ -1,0 +1,10 @@
+<svg id="pause" xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88">
+  <g id="Ellipse_1" data-name="Ellipse 1" fill="rgba(0,0,0,0.3)" stroke="#fff" stroke-width="5">
+    <circle cx="44" cy="44" r="44" stroke="none"/>
+    <circle cx="44" cy="44" r="41.5" fill="none"/>
+  </g>
+  <g id="pause-2" data-name="pause" transform="translate(29 26)">
+    <rect id="Rectangle_13" data-name="Rectangle 13" width="13" height="37" fill="#fff"/>
+    <rect id="Rectangle_14" data-name="Rectangle 14" width="13" height="37" transform="translate(17)" fill="#fff"/>
+  </g>
+</svg>
